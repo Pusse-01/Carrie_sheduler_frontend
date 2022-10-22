@@ -14,7 +14,6 @@ function App() {
 
   useEffect(() => {
     const loggedInUser = sessionStorage.getItem("token");
-    console.log("meka run wuna")
     if (loggedInUser) {
       const founduser = JSON.parse(loggedInUser);
       setUser({
@@ -63,7 +62,7 @@ function App() {
         
             {
               
-            user.role === "Doctor" ? (
+            user.role === "clinician" ? (
               
               <Routes>
                 <Route path="/dashboard" element={<Dashboard user = {user}/>} /> 
