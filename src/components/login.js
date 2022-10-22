@@ -15,7 +15,6 @@ async function loginUser(credentials) {
    .then(
     data => data.json()
     ).catch(
-     
       (error) => {
          alert("Login failed! Please try again!");
       }
@@ -37,7 +36,7 @@ export default function Login({ setToken , getUser}) {
     setToken(user)
     // console.log(user.role)
     // getUser(user.name, user.role)
-    user.role === "Doctor" ? (history("/dashboard")):(history("/home"))
+    user.role === "clinician" ? (history("/dashboard")):(history("/home"))
   }
 
   return(

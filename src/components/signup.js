@@ -65,7 +65,7 @@ export default function Signup({ setToken }) {
           <input type="text" onChange={e => setRole(e.target.value)}/>
         </label>
         <label>
-          <p>Distance to the Base</p>
+          <p>Distance to the Base (Related only for the clinicians)</p>
           <input type="text" onChange={e => setDistance(e.target.value)}/>
         </label>
         <div>
