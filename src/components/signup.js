@@ -40,7 +40,7 @@ export default function Signup({ setToken }) {
     });
     setToken(user);
     console.log(user)
-    user.role === "Doctor" ? (history("/dashboard")):(history("/home"))
+    user.role === "clinician" ? (history("/dashboard")):(history("/home"))
     
   }
 
