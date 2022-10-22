@@ -4,7 +4,7 @@ import { useNavigate  } from "react-router-dom";
 import '.././styles/login.css';
 
 async function loginUser(credentials) {
- return fetch('http://Carriesheduler-env.eba-ngss8uw2.us-east-1.elasticbeanstalk.com/login', {
+ return fetch('https://carrie-shedule.herokuapp.com/login', {
    method: 'POST',
    headers: {
      'Content-Type': 'application/json',

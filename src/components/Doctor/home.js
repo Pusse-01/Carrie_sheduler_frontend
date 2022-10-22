@@ -49,7 +49,7 @@ class DocHome extends Component {
     checkData = async () => {
     const response = await axios({
         method: 'post',
-        url: 'http://Carriesheduler-env.eba-ngss8uw2.us-east-1.elasticbeanstalk.com/addAppointments',
+        url: 'https://carrie-shedule.herokuapp.com/addAppointments',
         data: {
             "email":this.user.email,
             "start": this.state.time.start+":00",

@@ -6,7 +6,7 @@ import { Dropdown } from 'semantic-ui-react'
 
 
 async function reguser(credentials) {
- return fetch('http://Carriesheduler-env.eba-ngss8uw2.us-east-1.elasticbeanstalk.com/signup', {
+ return fetch('https://carrie-shedule.herokuapp.com/signup', {
   // mode: 'no-cors',
   method: 'POST',
    headers: {

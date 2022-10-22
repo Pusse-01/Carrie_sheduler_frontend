@@ -46,7 +46,7 @@ class Sheduler extends Component {
         console.log("Maximum Doctor Distance ", this.state.values[0])
         const response = await axios({
             method: 'post',
-            url: 'http://Carriesheduler-env.eba-ngss8uw2.us-east-1.elasticbeanstalk.com/getClinicians',
+            url: 'https://carrie-shedule.herokuapp.com/getClinicians',
             data: {
                 "start": this.state.time.start+":00",
                 "end": this.state.time.end+":00",
