@@ -46,7 +46,7 @@ class Sheduler extends Component {
         console.log("Maximum Doctor Distance ", this.state.values[0])
         const response = await axios({
             method: 'post',
-            url: 'http://127.0.0.1:5000/getClinicians',
+            url: 'https://carrie-shedule.herokuapp.com/getClinicians',
             data: {
                 "start": this.state.time.start+":00",
                 "end": this.state.time.end+":00",
@@ -128,7 +128,7 @@ class Sheduler extends Component {
 
                 <div className="predictedDoctorsContainer">
                     {this.state.generatedResults ?
-                        <h5>Available clinicians for you</h5>
+                        <h1>The generated list of doctors suitable for your appointment</h1>
                         :
                         <h1></h1>
                     }
