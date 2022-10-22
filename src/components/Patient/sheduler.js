@@ -128,7 +128,7 @@ class Sheduler extends Component {
 
                 <div className="predictedDoctorsContainer">
                     {this.state.generatedResults ?
-                        <h1>The generated list of doctors suitable for your appointment</h1>
+                        <h1>Available clinicians for you...</h1>
                         :
                         <h1></h1>
                     }
