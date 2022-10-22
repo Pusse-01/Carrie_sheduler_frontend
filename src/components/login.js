@@ -12,8 +12,16 @@ async function loginUser(credentials) {
    },
    body: JSON.stringify(credentials)
  })
-   .then(data => data.json())
-}
+   .then(
+    data => data.json()
+    ).catch(
+     
+      (error) => {
+         alert("Login failed! Please try again!");
+      }
+    )
+  
+  }
 
 export default function Login({ setToken , getUser}) {
   const [email, setEmial] = useState();
@@ -34,7 +42,7 @@ export default function Login({ setToken , getUser}) {
 
   return(
     <div className="login-wrapper">
-      <h1>Please Log In</h1>
+      <h1>Log In</h1>
       <form onSubmit={handleSubmit}>
         <label>
           <p>Email</p>

@@ -24,26 +24,21 @@ class DocHome extends Component {
             values: [50]
         }
     }
-    
-    // oncheck(){
-    //     console.log(this.state.time.start);
-    //     console.log(this.state.time.end);
-    //     console.log(this.state.values);
-    //     console.log(this.state.date)
-    // }
-
     changeStartHandler(time) {
-        console.log("Start Handler Called", time);
+        // console.log("Start Handler Called", time);
     }
 
     timeChangeHandler(time) {
         this.setState({
             time: time
-        },()=>{console.log(time)});
+        },()=>{
+            // console.log(time)
+        
+        });
     }
 
     changeCompleteHandler(time) {
-        console.log("Complete Handler Called", time);
+        // console.log("Complete Handler Called", time);
     }
 
     checkData = async () => {
@@ -57,9 +52,17 @@ class DocHome extends Component {
             "date":  Moment(this.state.date).format('YYYY:MM:DD'),
             "distance": this.state.values[0]
         }
-    });
-    console.log("RESPONSE ",response.data)
-    this.setState({response:response.data,generatedResults:true})
+    }).then(()=>{
+        // this.setState({response:response.data,generatedResults:true})
+        alert("Successfully added!");
+        
+    })
+    .catch((error) => {
+        // alert(error);
+      });;
+    // console.log("RESPONSE ",response.data)
+    
+
     }
 
     render() {
@@ -123,6 +126,9 @@ class DocHome extends Component {
                 />
                 <div className="checkButton">
                     <p className="checkText" onClick={this.checkData}>Add</p>
+                </div>
+                <div>
+                    <p></p>
                 </div>
                 <Logout/>
             </div>

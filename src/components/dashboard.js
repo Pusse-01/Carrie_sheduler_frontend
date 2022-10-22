@@ -11,14 +11,8 @@ export default function Dashboard() {
   return(
     
     <div>
-      <div>
-        <h1>
-                Doctor's components
-            </h1>
-            <DocHome/>
+        <DocHome/>
       </div>
       
-      <Logout/>
-    </div>
   );
 }

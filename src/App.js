@@ -39,9 +39,9 @@ function App() {
   if(!token) {
     return (
     <div >
-      <div className=".App">
+      {/* <div className=".App">
 <h1 > PROJECT CARRIE</h1>
-      </div>
+      </div> */}
       
 <BrowserRouter>
         <Routes>
@@ -56,9 +56,9 @@ function App() {
   
   return (
     <div >
-      <div className='.App-header'>
+      {/* <div className='.App-header'>
 <h1 > PROJECT CARRIE</h1>
-      </div>
+      </div> */}
       <BrowserRouter>
         
             {

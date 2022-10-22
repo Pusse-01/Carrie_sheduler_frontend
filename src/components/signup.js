@@ -46,7 +46,7 @@ export default function Signup({ setToken }) {
 
   return(
     <div className="login-wrapper">
-      <h1>Please Log In</h1>
+      <h1>Sign up</h1>
       <form onSubmit={handleSubmit}>
         <label>
           <p>Name</p>
@@ -61,7 +61,7 @@ export default function Signup({ setToken }) {
           <input type="password" onChange={e => setPassword(e.target.value)}/>
         </label>
         <label>
-          <p>Role</p>
+          <p>Role (State whether Clinician or Patient)</p>
           <input type="text" onChange={e => setRole(e.target.value)}/>
         </label>
         <label>
